@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<div class="header">
+	<header class="header">
 		<div class="container">
 			<div class="row">
 				<div class="col logo-block">
@@ -46,6 +46,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
 
 	<div id="content" class="site-content">
