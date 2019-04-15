@@ -212,3 +212,94 @@ footer .contact {
     justify-content: space-around;
 	width: 50px;
 }
+
+h1 {
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 62px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+body.page-subscribe .entry-content {
+	max-width: 320px;
+}
+
+.content-area {
+	height: calc(100vh - 240px);
+}
+
+.content-area main, .content-area article, .content-area div{
+	height: 100%;
+}
+
+.content-area .row .col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: space-around;
+}
+
+.content-area .content .title {
+	margin-bottom: 10px;
+}
+
+.content-area .content {
+	height: auto;
+}
+
+.content-area .content div {
+	height: auto;
+}
+
+.content-area .content p {
+	color: #7A7E7C;
+	font-size: 20px;
+}
+
+body.page-subscribe .content-area .wpcf7 input{
+	max-width: 255px;
+}
+
+body.page-subscribe .content-area .wpcf7-submit {
+	margin-top: 20px;
+	border: none;
+	background: #202221;
+    color: #fff;
+	width: 100%;
+}
+
+.wpcf7-form p {
+	margin: 20px 0;
+}
+
+.wpcf7 label {
+	margin-bottom: 0;
+}
+
+.wpcf7 input[type="email"] {
+	border: none;
+    border-bottom: 2px solid;
+}
+
+.wpcf7 input {
+	padding: 10px 0;
+	outline: none;
+}
+
+.wpcf7 input::placeholder{
+	color: #A1A1A1;
+}
+
+body.page-subscribe .container .img-block{
+	position: relative;
+	overflow: hidden;
+}
+
+body.page-subscribe .container .img-block img {
+	margin-top: -65px;
+	margin-left: -180px;
+}
+
+
+
