@@ -96,6 +96,10 @@ header .menu {
 	display: flex;
 }
 
+header .burger-menu:hover {
+	cursor: pointer;
+}
+
 header .burger-menu {
 	position: relative;
 	padding: 0 15px;
@@ -326,7 +330,7 @@ body.page-subscribe .container .img-block{
 }
 
 body.page-subscribe .container .img-block img {
-	margin-top: -65px;
+	margin-top: -130px;
 	margin-left: -300px;
 }
 
