@@ -1,0 +1,416 @@
+@charset "UTF-8";
+/*
+Theme Name: Twenty Nineteen
+Theme URI: https://github.com/WordPress/twentynineteen
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: WordPress 4.9.6
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: twentynineteen
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Twenty Nineteen is based on Underscores https://underscores.me/, (C) 2012-2018 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+
+/*Custom styles*/
+
+body {
+	font-family: 'Oswald', sans-serif;
+	box-sizing: content-box;
+	color: #202221;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: unset;
+	color: unset;
+}
+
+.container{
+	max-width: 1440px;
+	padding: 0 20px;
+}
+
+.container .row {
+	width: 100%;
+}
+
+header {
+	height: 100px;
+	display: flex;
+    align-items: flex-end;
+}
+
+header .row .col {
+	display: flex;
+	align-items: flex-end;
+}
+
+header .row .col:first-child {
+	text-align: left;
+}
+
+header .row .col:last-child {
+	text-align: right;
+}
+
+header h2, header h3, header h4 {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+
+header div {
+	width: 100%;
+}
+
+header .menu .menu-title h4 {
+	font-family: inherit;
+	line-height: 25px;
+	text-align: right;
+	font-style: normal;
+	font-weight: bold;
+}
+
+header .logo h2 {
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	font-size: 48px;
+}
+
+header .menu {
+	display: flex;
+}
+
+header .burger-menu:hover {
+	cursor: pointer;
+}
+
+header .burger-menu {
+	position: relative;
+	padding: 0 15px;
+	width: 60px;
+}
+
+header .burger-menu span {
+	position: absolute;
+	display: block;
+	border: 1px solid #202221;
+}
+
+header .burger-menu span:first-child {
+	bottom: 22px;
+    left: 15px;
+	width: 30px;
+}
+
+header .burger-menu span:last-child {
+    bottom: 15px;
+	margin-top: 7px;
+	width: 21.43px;
+}
+
+footer {
+    padding-bottom: 20px;
+    height: 140px;
+}
+
+footer .container {
+	display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+}
+
+footer .socials {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-right: 20px;
+}
+
+footer .nav-menu {
+	display: flex;
+    flex: 0 0 85%;
+    max-width: 85%;
+    text-align: right;
+    flex-direction: column;
+}
+
+ul#menu-menu {
+	padding-left: 20px;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+ul#menu-menu li{
+	display: inline;
+	text-transform: uppercase;
+	color: #E0E0E0;
+}
+
+ul#menu-menu li.current_page_item {
+	color: #202221;
+}
+
+
+ul#menu-menu li:last-child {
+	padding-right: 0;
+}
+
+footer .status-bar {
+	width: 100%;
+	display: flex;
+}
+
+footer .status-bar span.bold-bar {
+	display: block;
+	width: 50%;
+	height: 4px;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+}
+
+footer .status-bar span.thin-bar {
+	margin-top: 1px;
+	width: 50%;
+	display: block;
+	width: 50%;
+	height: 2px;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+footer .socials img{
+	height: 20px;
+	max-width: 25px;
+}
+
+footer .socials .tw img {
+	height: 25px;
+	width: 25px;
+}
+
+footer .contact-block {
+	width: 50px;
+	border-top: 2px solid;
+	height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer .contact-block a {
+	line-height: 0;
+    height: auto;
+	display: block;
+}
+
+footer .contact {
+	padding-left: 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	width: 50px;
+}
+
+footer .container .row {
+	width: 100%;
+}
+
+footer .container .row .col {
+	display: flex;
+    flex-direction: row;
+	padding: 0;
+}
+
+footer .col.large-block {
+	justify-content: space-between;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 62px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+body.page-subscribe .entry-content {
+	max-width: 320px;
+}
+
+.content-area {
+	height: calc(100vh - 240px);
+}
+
+.content-area main, .content-area article, .content-area div{
+	height: 100%;
+}
+
+.content-area .row .col-12 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: space-around;
+}
+
+.content-area .content .title {
+	margin-bottom: 10px;
+}
+
+.content-area .content {
+	height: auto;
+}
+
+.content-area .content div {
+	height: auto;
+}
+
+.content-area .content p {
+	color: #7A7E7C;
+	font-size: 20px;
+}
+
+body.page-subscribe .content-area .wpcf7 input{
+	max-width: 255px;
+}
+
+body.page-subscribe .content-area .wpcf7-submit {
+	margin-top: 20px;
+	border: none;
+	background: #202221;
+    color: #fff;
+	width: 100%;
+}
+
+.wpcf7-form p {
+	margin: 20px 0;
+}
+
+.wpcf7 label {
+	margin-bottom: 0;
+}
+
+.wpcf7 input[type="email"] {
+	border: none;
+    border-bottom: 2px solid;
+}
+
+.wpcf7 input {
+	padding: 10px 0;
+	outline: none;
+}
+
+.wpcf7 input::placeholder{
+	color: #A1A1A1;
+}
+
+body.page-subscribe .container .img-block{
+	max-width: 600px;
+	position: relative;
+	overflow: hidden;
+}
+
+body.page-subscribe .container .img-block img {
+	margin-top: -130px;
+	margin-left: -300px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+	footer .container .large-block {
+		justify-content: flex-end;
+	}
+
+	footer .container .large-block .nav-menu {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+
+	header .row .col {
+		align-items: center;
+	}
+
+	body.page-subscribe .container .row {
+		padding: 0;
+		margin: 0;
+	}
+
+	body.page-subscribe .container {
+		text-align: center;
+	}
+
+	body.page-subscribe .container .entry-content {
+		margin: 0 auto;
+	}
+
+	body.page-subscribe .content-area {
+		height: auto;
+		padding-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	body.page-subscribe .content-area .img-block img{
+		width: 400px;
+	    height: 300px;
+	    margin-top: -20px;
+    	margin-left: -70px
+	}
+}
+
+@media only screen and (max-width: 460px) {
+
+	body.page-subscribe header h2 {
+		font-size: 38px;
+	}
+
+	body.page-subscribe header .container .row .col{
+		width: 50%;
+	}
+
+	body.page-subscribe h1{
+		font-size: 50px;
+	}
+
+	body.page-subscrbe form.wpcf7 {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	body.page-subscribe .content-area .img-block {
+		max-width: 320px;
+	}
+
+	body.page-subscribe .content-area .img-block img{
+		margin-top: -20px;
+    	margin-left: -60px;
+	}
+}
+
+@media only screen and (max-height: 800px) {
+	body.page-subscribe .content-area {
+		min-height: 600px;
+	}
+}
+
