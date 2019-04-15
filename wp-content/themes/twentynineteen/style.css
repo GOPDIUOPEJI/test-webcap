@@ -137,14 +137,23 @@ footer .socials {
 }
 
 footer .nav-menu {
-	width: calc(100% - 100px);
+	display: flex;
+    flex: 0 0 85%;
+    max-width: 85%;
     text-align: right;
-    padding: 0 75px;
+    flex-direction: column;
+}
+
+ul#menu-menu {
+	padding-left: 20px;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 ul#menu-menu li{
 	display: inline;
-	padding-right: 40px;
 	text-transform: uppercase;
 	color: #E0E0E0;
 }
@@ -192,6 +201,7 @@ footer .socials .tw img {
 }
 
 footer .contact-block {
+	width: 50px;
 	border-top: 2px solid;
 	height: 100px;
     display: flex;
@@ -211,6 +221,20 @@ footer .contact {
     flex-direction: column;
     justify-content: space-around;
 	width: 50px;
+}
+
+footer .container .row {
+	width: 100%;
+}
+
+footer .container .row .col {
+	display: flex;
+    flex-direction: row;
+	padding: 0;
+}
+
+footer .col.large-block {
+	justify-content: space-between;
 }
 
 h1 {
