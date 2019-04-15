@@ -15,7 +15,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col col-lg-4">
+			<div class="col-12 col-lg-4">
 				<div class="content">
 					<div class="title"><h1><?php the_title();?></h1></div>
 
@@ -23,7 +23,7 @@
 				</div>
 				
 			</div>
-			<div class="col col-lg-8">
+			<div class="col-12 col-lg-8">
 				<div class="img-block"><?php the_post_thumbnail() ?></div>
 			</div>
 		</div>

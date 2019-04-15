@@ -45,6 +45,10 @@ a:hover {
 	padding: 0 20px;
 }
 
+.container .row {
+	width: 100%;
+}
+
 header {
 	height: 100px;
 	display: flex;
@@ -257,7 +261,7 @@ body.page-subscribe .entry-content {
 	height: 100%;
 }
 
-.content-area .row .col {
+.content-area .row .col-12 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -316,14 +320,93 @@ body.page-subscribe .content-area .wpcf7-submit {
 }
 
 body.page-subscribe .container .img-block{
+	max-width: 600px;
 	position: relative;
 	overflow: hidden;
 }
 
 body.page-subscribe .container .img-block img {
 	margin-top: -65px;
-	margin-left: -180px;
+	margin-left: -300px;
 }
 
+@media only screen and (max-width: 1200px) {
 
+	footer .container .large-block {
+		justify-content: flex-end;
+	}
+
+	footer .container .large-block .nav-menu {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+
+	header .row .col {
+		align-items: center;
+	}
+
+	body.page-subscribe .container .row {
+		padding: 0;
+		margin: 0;
+	}
+
+	body.page-subscribe .container {
+		text-align: center;
+	}
+
+	body.page-subscribe .container .entry-content {
+		margin: 0 auto;
+	}
+
+	body.page-subscribe .content-area {
+		height: auto;
+		padding-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	body.page-subscribe .content-area .img-block img{
+		width: 400px;
+	    height: 300px;
+	    margin-top: -20px;
+    	margin-left: -70px
+	}
+}
+
+@media only screen and (max-width: 460px) {
+
+	body.page-subscribe header h2 {
+		font-size: 38px;
+	}
+
+	body.page-subscribe header .container .row .col{
+		width: 50%;
+	}
+
+	body.page-subscribe h1{
+		font-size: 50px;
+	}
+
+	body.page-subscrbe form.wpcf7 {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	body.page-subscribe .content-area .img-block {
+		max-width: 320px;
+	}
+
+	body.page-subscribe .content-area .img-block img{
+		margin-top: -20px;
+    	margin-left: -60px;
+	}
+}
+
+@media only screen and (max-height: 800px) {
+	body.page-subscribe .content-area {
+		min-height: 600px;
+	}
+}
 
