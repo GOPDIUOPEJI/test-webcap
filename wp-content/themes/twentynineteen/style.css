@@ -64,7 +64,7 @@ header .row .col:last-child {
 	text-align: right;
 }
 
-header h2, .header h3, .header h4 {
+header h2, header h3, header h4 {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 }
@@ -117,11 +117,68 @@ header .burger-menu span:last-child {
 }
 
 footer {
-	height: 220px;
+    padding-bottom: 20px;
+    height: 140px;
+}
+
+footer .container {
+	display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+}
+
+footer .socials {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-right: 20px;
+}
+
+footer .nav-menu {
+	width: calc(100% - 100px);
+    text-align: right;
+    padding: 0 75px;
 }
 
 ul#menu-menu li{
 	display: inline;
+	padding-right: 40px;
+	text-transform: uppercase;
+	color: #E0E0E0;
+}
+
+ul#menu-menu li.current_page_item {
+	color: #202221;
+}
+
+
+ul#menu-menu li:last-child {
+	padding-right: 0;
+}
+
+footer .status-bar {
+	width: 100%;
+	display: flex;
+}
+
+footer .status-bar span.bold-bar {
+	display: block;
+	width: 50%;
+	height: 4px;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+}
+
+footer .status-bar span.thin-bar {
+	margin-top: 1px;
+	width: 50%;
+	display: block;
+	width: 50%;
+	height: 2px;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
 }
 
 footer .socials img{
@@ -132,4 +189,26 @@ footer .socials img{
 footer .socials .tw img {
 	height: 25px;
 	width: 25px;
+}
+
+footer .contact-block {
+	border-top: 2px solid;
+	height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer .contact-block a {
+	line-height: 0;
+    height: auto;
+	display: block;
+}
+
+footer .contact {
+	padding-left: 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	width: 50px;
 }

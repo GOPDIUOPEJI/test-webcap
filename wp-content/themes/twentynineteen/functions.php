@@ -321,3 +321,12 @@ require get_template_directory() . '/inc/template-tags.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/* Custom hooks*/
+
+function add_custom_scripts() {
+	wp_enqueue_script( 'jquery', get_theme_file_uri( 'https://code.jquery.com/jquery-3.4.0.min.js' ), array(), 0, false );
+	wp_enqueue_script( 'animations', get_theme_file_uri( '/app/js/animations.js' ), array(), '1.1', true );
+}
+
+add_action( 'wp_enqueue_scripts', 'add_custom_scripts' );
