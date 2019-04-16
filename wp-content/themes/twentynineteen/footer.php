@@ -11,6 +11,11 @@
  * @since 1.0.0
  */
 
+$options_post_id = get_page_by_path('options')->ID;
+$options = get_fields($options_post_id);
+var_dump($options['instagram_link']);
+
+
 ?>
 
 	</div><!-- #content -->
@@ -21,8 +26,8 @@
 				<div class="col col-lg-3">
 					<div class="contact-block">
 						<div class="contact">
-							<div class="geo"><a href="#"><img src="http://webcap.com/wp-content/uploads/2019/04/geo.png"></a></div>
-							<div class="call"><a href="#>"><img src="http://webcap.com/wp-content/uploads/2019/04/call.png"></a></div>
+							<div class="geo"><a href="<?= $options['geoposition']; ?>"><img src="<?= $options['geoposition_img']; ?>"></a></div>
+							<div class="call"><a href="tel:<?= $options['contact_phone']; ?>"><img src="<?= $options['contact_phone_img']; ?>"></a></div>
 						</div>
 					</div>
 				</div>
@@ -35,33 +40,13 @@
 						</div>
 					</div>
 					<div class="socials">
-						<div class="inst"><a href="#"><img  src="http://webcap.com/wp-content/uploads/2019/04/instagram.png"></a></div>
-						<div class="fb"><a href="#"><img  src="http://webcap.com/wp-content/uploads/2019/04/facebook.png"></a></div>
-						<div class="tw"><a href="#"><img  src="http://webcap.com/wp-content/uploads/2019/04/twitter.png"></a></div>
+						<div class="inst"><a href="<?= $options['instagram_link'];?>"><img  src="<?= $options['instagram_img'];?>"></a></div>
+						<div class="fb"><a href="<?= $options['facebook_link']; ?>"><img  src="<?= $options['facebook_img']; ?>"></a></div>
+						<div class="tw"><a href="<?= $options['twitter_link']; ?>"><img  src="<?= $options['twitter_img']; ?>"></a></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- <div class="container">
-			<div class="contact-block">
-				<div class="contact">
-					<div class="geo"><a href="#"><img src="http://webcap.com/wp-content/uploads/2019/04/geo.png"></a></div>
-					<div class="call"><a href="#>"><img src="http://webcap.com/wp-content/uploads/2019/04/call.png"></a></div>
-				</div>
-			</div>
-			<div class="nav-menu">
-				<?php wp_nav_menu(); ?>
-				<div class="status-bar">
-					<span class="bold-bar"></span>
-					<span class="thin-bar"></span>
-				</div>
-			</div>
-			<div class="socials">
-				<div class="inst"><a href="#"><img  src="http://webcap.com/wp-content/uploads/2019/04/instagram.png"></a></div>
-				<div class="fb"><a href="#"><img  src="http://webcap.com/wp-content/uploads/2019/04/facebook.png"></a></div>
-				<div class="tw"><a href="#"><img  src="http://webcap.com/wp-content/uploads/2019/04/twitter.png"></a></div>
-			</div>
-		</div> -->
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
