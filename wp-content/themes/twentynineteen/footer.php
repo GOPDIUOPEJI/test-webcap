@@ -13,7 +13,7 @@
 
 $options_post_id = get_page_by_path('options')->ID;
 $options = get_fields($options_post_id);
-var_dump($options['instagram_link']);
+$options['instagram_link']
 
 
 ?>
